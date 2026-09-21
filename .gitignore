@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.noise_cache/
+data/prices_*.csv
+data/fundamentals.json
+data/riskfree_*.csv
+output/
+exports/
+*.xlsx
