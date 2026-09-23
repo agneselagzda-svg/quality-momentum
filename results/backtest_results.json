@@ -1,0 +1,987 @@
+{
+ "generated": "2026-09-09 16:00",
+ "parameters": {
+  "TOP_N": 20,
+  "HYSTERESIS": 30,
+  "LOOKBACK_DAYS": 252,
+  "SKIP_DAYS": 21,
+  "TX_COST_BPS": 10,
+  "MIN_PRICE": 10.0,
+  "MIN_AVG_VOLUME": 2000000.0,
+  "BETA_RANGE": [
+   0.8,
+   2.0
+  ],
+  "MIN_MARKET_CAP": 10000000000.0,
+  "MIN_ROE": 0.1,
+  "BACKTEST_START": "2007-01-01",
+  "REBALANCE_TO_EQUAL_WEIGHT": true
+ },
+ "backtests": {
+  "honest": {
+   "strategy": {
+    "cagr": 0.11529724986290879,
+    "vol": 0.2696143681135378,
+    "sharpe": 0.48538066644649336,
+    "sortino": 0.6240087120762445,
+    "max_dd": -0.6668110890276993,
+    "max_dd_date": "2009-03-09",
+    "total": 7.4943244507126465,
+    "years": 19.60574948665298
+   },
+   "spy": {
+    "cagr": 0.10886368646407574,
+    "vol": 0.1960360985699548,
+    "sharpe": 0.5500804300414626,
+    "sortino": 0.6748305316756619,
+    "max_dd": -0.5518945929026734,
+    "max_dd_date": "2009-03-09",
+    "total": 6.583505164340412,
+    "years": 19.60574948665298
+   },
+   "by_year": [
+    {
+     "year": 2007,
+     "strategy": 0.13514615585804468,
+     "spy": 0.03588253369022265
+    },
+    {
+     "year": 2008,
+     "strategy": -0.502257437352529,
+     "spy": -0.3679501029375629
+    },
+    {
+     "year": 2009,
+     "strategy": 0.14574762438799604,
+     "spy": 0.2635176259157497
+    },
+    {
+     "year": 2010,
+     "strategy": 0.13281332839299353,
+     "spy": 0.15056115993847174
+    },
+    {
+     "year": 2011,
+     "strategy": -0.09875819479243475,
+     "spy": 0.01895009654561397
+    },
+    {
+     "year": 2012,
+     "strategy": 0.14907842385332204,
+     "spy": 0.15990347368746405
+    },
+    {
+     "year": 2013,
+     "strategy": 0.39715561514685027,
+     "spy": 0.3230778094040061
+    },
+    {
+     "year": 2014,
+     "strategy": 0.12561171856281295,
+     "spy": 0.13463751321087347
+    },
+    {
+     "year": 2015,
+     "strategy": 0.0252799921437159,
+     "spy": 0.012343377778720521
+    },
+    {
+     "year": 2016,
+     "strategy": 0.018584603851402814,
+     "spy": 0.11997856170222287
+    },
+    {
+     "year": 2017,
+     "strategy": 0.1810058262736871,
+     "spy": 0.21705406263002458
+    },
+    {
+     "year": 2018,
+     "strategy": -0.03033287220057146,
+     "spy": -0.04568991210404738
+    },
+    {
+     "year": 2019,
+     "strategy": 0.2547612168830735,
+     "spy": 0.31223852302976574
+    },
+    {
+     "year": 2020,
+     "strategy": 0.2127271783561615,
+     "spy": 0.1833162792386187
+    },
+    {
+     "year": 2021,
+     "strategy": 0.150762330074524,
+     "spy": 0.28728772012764225
+    },
+    {
+     "year": 2022,
+     "strategy": -0.027722725855351626,
+     "spy": -0.18175355707528473
+    },
+    {
+     "year": 2023,
+     "strategy": 0.20217349297973142,
+     "spy": 0.2617577783124516
+    },
+    {
+     "year": 2024,
+     "strategy": 0.39323912377276704,
+     "spy": 0.24886463075613463
+    },
+    {
+     "year": 2025,
+     "strategy": 0.2645924005601086,
+     "spy": 0.17719067981214542
+    },
+    {
+     "year": 2026,
+     "strategy": 0.6490845899211641,
+     "spy": 0.12396120867948479
+    }
+   ],
+   "worst_12m_vs_spy": -0.36399542949668395,
+   "worst_12m_vs_spy_date": "2009-06",
+   "pct_months_beat_spy": 0.4788135593220339,
+   "excess_cagr": 0.006433563398833053,
+   "sub_periods": [
+    {
+     "period": "2007-2012 (GFC + recovery)",
+     "start": "2007-01-31",
+     "end": "2012-12-31",
+     "strategy_cagr": -0.045444098879794614,
+     "spy_cagr": 0.020097171571010986,
+     "strategy_sharpe": -0.011716747587825533,
+     "spy_sharpe": 0.1666434611092067,
+     "strategy_maxdd": -0.6668110890276993,
+     "spy_maxdd": -0.5518945929026734
+    },
+    {
+     "period": "2013-2019",
+     "start": "2013-01-02",
+     "end": "2019-12-31",
+     "strategy_cagr": 0.12565990401851512,
+     "spy_cagr": 0.14191457755831483,
+     "strategy_sharpe": 0.7103303736039795,
+     "spy_sharpe": 1.0443069246030723,
+     "strategy_maxdd": -0.28936398783113026,
+     "spy_maxdd": -0.19348947708592978
+    },
+    {
+     "period": "2020-2022 (covid + rate shock)",
+     "start": "2020-01-02",
+     "end": "2022-12-30",
+     "strategy_cagr": 0.10340254599343268,
+     "spy_cagr": 0.0730406196791955,
+     "strategy_sharpe": 0.4403365918370834,
+     "spy_sharpe": 0.3762468902566046,
+     "strategy_maxdd": -0.35275197699842553,
+     "spy_maxdd": -0.3371728241903854
+    },
+    {
+     "period": "2023-now (original backtest window)",
+     "start": "2023-01-03",
+     "end": "2026-09-09",
+     "strategy_cagr": 0.4138749710821168,
+     "spy_cagr": 0.2222215504042102,
+     "strategy_sharpe": 1.275419736059705,
+     "spy_sharpe": 1.1279471293738175,
+     "strategy_maxdd": -0.3037293668469012,
+     "spy_maxdd": -0.18755226260622682
+    }
+   ],
+   "turnover_per_rebalance": 0.4729358324083791,
+   "delistings_handled": 0,
+   "rebalances": 237,
+   "coverage_by_year": [
+    {
+     "year": 2007,
+     "members": 497,
+     "with_prices": 360,
+     "eligible": 140
+    },
+    {
+     "year": 2008,
+     "members": 497,
+     "with_prices": 368,
+     "eligible": 147
+    },
+    {
+     "year": 2009,
+     "members": 499,
+     "with_prices": 371,
+     "eligible": 129
+    },
+    {
+     "year": 2010,
+     "members": 498,
+     "with_prices": 374,
+     "eligible": 141
+    },
+    {
+     "year": 2011,
+     "members": 497,
+     "with_prices": 378,
+     "eligible": 169
+    },
+    {
+     "year": 2012,
+     "members": 497,
+     "with_prices": 383,
+     "eligible": 148
+    },
+    {
+     "year": 2013,
+     "members": 497,
+     "with_prices": 388,
+     "eligible": 156
+    },
+    {
+     "year": 2014,
+     "members": 498,
+     "with_prices": 391,
+     "eligible": 159
+    },
+    {
+     "year": 2015,
+     "members": 501,
+     "with_prices": 400,
+     "eligible": 180
+    },
+    {
+     "year": 2016,
+     "members": 505,
+     "with_prices": 415,
+     "eligible": 180
+    },
+    {
+     "year": 2017,
+     "members": 506,
+     "with_prices": 425,
+     "eligible": 156
+    },
+    {
+     "year": 2018,
+     "members": 505,
+     "with_prices": 429,
+     "eligible": 166
+    },
+    {
+     "year": 2019,
+     "members": 505,
+     "with_prices": 434,
+     "eligible": 158
+    },
+    {
+     "year": 2020,
+     "members": 505,
+     "with_prices": 449,
+     "eligible": 209
+    },
+    {
+     "year": 2021,
+     "members": 505,
+     "with_prices": 458,
+     "eligible": 172
+    },
+    {
+     "year": 2022,
+     "members": 504,
+     "with_prices": 469,
+     "eligible": 151
+    },
+    {
+     "year": 2023,
+     "members": 503,
+     "with_prices": 479,
+     "eligible": 160
+    },
+    {
+     "year": 2024,
+     "members": 503,
+     "with_prices": 487,
+     "eligible": 126
+    },
+    {
+     "year": 2025,
+     "members": 503,
+     "with_prices": 493,
+     "eligible": 141
+    },
+    {
+     "year": 2026,
+     "members": 503,
+     "with_prices": 501,
+     "eligible": 131
+    }
+   ]
+  },
+  "honest_trade_changes_only": {
+   "strategy": {
+    "cagr": 0.11755252086203649,
+    "vol": 0.27164006534970936,
+    "sharpe": 0.491232099301577,
+    "sortino": 0.6333266830945858,
+    "max_dd": -0.6698378257230311,
+    "max_dd_date": "2009-03-09",
+    "total": 7.837495170012444,
+    "years": 19.60574948665298
+   },
+   "spy": {
+    "cagr": 0.10886368646407574,
+    "vol": 0.1960360985699548,
+    "sharpe": 0.5500804300414626,
+    "sortino": 0.6748305316756619,
+    "max_dd": -0.5518945929026734,
+    "max_dd_date": "2009-03-09",
+    "total": 6.583505164340412,
+    "years": 19.60574948665298
+   },
+   "by_year": [
+    {
+     "year": 2007,
+     "strategy": 0.132253650498787,
+     "spy": 0.03588253369022265
+    },
+    {
+     "year": 2008,
+     "strategy": -0.5134553481615525,
+     "spy": -0.3679501029375629
+    },
+    {
+     "year": 2009,
+     "strategy": 0.1476013102449305,
+     "spy": 0.2635176259157497
+    },
+    {
+     "year": 2010,
+     "strategy": 0.15743743251587472,
+     "spy": 0.15056115993847174
+    },
+    {
+     "year": 2011,
+     "strategy": -0.09388003678773305,
+     "spy": 0.01895009654561397
+    },
+    {
+     "year": 2012,
+     "strategy": 0.14804796429710443,
+     "spy": 0.15990347368746405
+    },
+    {
+     "year": 2013,
+     "strategy": 0.37922892242459527,
+     "spy": 0.3230778094040061
+    },
+    {
+     "year": 2014,
+     "strategy": 0.15101523819424023,
+     "spy": 0.13463751321087347
+    },
+    {
+     "year": 2015,
+     "strategy": 0.005888841598976402,
+     "spy": 0.012343377778720521
+    },
+    {
+     "year": 2016,
+     "strategy": 0.008733924861443976,
+     "spy": 0.11997856170222287
+    },
+    {
+     "year": 2017,
+     "strategy": 0.18665008155423246,
+     "spy": 0.21705406263002458
+    },
+    {
+     "year": 2018,
+     "strategy": -0.03581733019007405,
+     "spy": -0.04568991210404738
+    },
+    {
+     "year": 2019,
+     "strategy": 0.25767371576647236,
+     "spy": 0.31223852302976574
+    },
+    {
+     "year": 2020,
+     "strategy": 0.21728181351867826,
+     "spy": 0.1833162792386187
+    },
+    {
+     "year": 2021,
+     "strategy": 0.1559976164988428,
+     "spy": 0.28728772012764225
+    },
+    {
+     "year": 2022,
+     "strategy": 0.008561827911568454,
+     "spy": -0.18175355707528473
+    },
+    {
+     "year": 2023,
+     "strategy": 0.18376635456908152,
+     "spy": 0.2617577783124516
+    },
+    {
+     "year": 2024,
+     "strategy": 0.39557233457800023,
+     "spy": 0.24886463075613463
+    },
+    {
+     "year": 2025,
+     "strategy": 0.2828469385012453,
+     "spy": 0.17719067981214542
+    },
+    {
+     "year": 2026,
+     "strategy": 0.6652929962289267,
+     "spy": 0.12396120867948479
+    }
+   ],
+   "worst_12m_vs_spy": -0.37512444280127766,
+   "worst_12m_vs_spy_date": "2009-06",
+   "pct_months_beat_spy": 0.4830508474576271,
+   "excess_cagr": 0.008688834397960754,
+   "sub_periods": [
+    {
+     "period": "2007-2012 (GFC + recovery)",
+     "start": "2007-01-31",
+     "end": "2012-12-31",
+     "strategy_cagr": -0.045070359121871295,
+     "spy_cagr": 0.020097171571010986,
+     "strategy_sharpe": -0.011357386876795088,
+     "spy_sharpe": 0.1666434611092067,
+     "strategy_maxdd": -0.6698378257230311,
+     "spy_maxdd": -0.5518945929026734
+    },
+    {
+     "period": "2013-2019",
+     "start": "2013-01-02",
+     "end": "2019-12-31",
+     "strategy_cagr": 0.12278035167915591,
+     "spy_cagr": 0.14191457755831483,
+     "strategy_sharpe": 0.6902783659979285,
+     "spy_sharpe": 1.0443069246030723,
+     "strategy_maxdd": -0.29171449266828253,
+     "spy_maxdd": -0.19348947708592978
+    },
+    {
+     "period": "2020-2022 (covid + rate shock)",
+     "start": "2020-01-02",
+     "end": "2022-12-30",
+     "strategy_cagr": 0.1200510434908153,
+     "spy_cagr": 0.0730406196791955,
+     "strategy_sharpe": 0.4823833360841343,
+     "spy_sharpe": 0.3762468902566046,
+     "strategy_maxdd": -0.35262160189890823,
+     "spy_maxdd": -0.3371728241903854
+    },
+    {
+     "period": "2023-now (original backtest window)",
+     "start": "2023-01-03",
+     "end": "2026-09-09",
+     "strategy_cagr": 0.41899742867152767,
+     "spy_cagr": 0.2222215504042102,
+     "strategy_sharpe": 1.281694246954544,
+     "spy_sharpe": 1.1279471293738175,
+     "strategy_maxdd": -0.2937990795520319,
+     "spy_maxdd": -0.18755226260622682
+    }
+   ],
+   "turnover_per_rebalance": 0.3965571649709666,
+   "delistings_handled": 0,
+   "rebalances": 237,
+   "coverage_by_year": [
+    {
+     "year": 2007,
+     "members": 497,
+     "with_prices": 360,
+     "eligible": 140
+    },
+    {
+     "year": 2008,
+     "members": 497,
+     "with_prices": 368,
+     "eligible": 147
+    },
+    {
+     "year": 2009,
+     "members": 499,
+     "with_prices": 371,
+     "eligible": 129
+    },
+    {
+     "year": 2010,
+     "members": 498,
+     "with_prices": 374,
+     "eligible": 141
+    },
+    {
+     "year": 2011,
+     "members": 497,
+     "with_prices": 378,
+     "eligible": 169
+    },
+    {
+     "year": 2012,
+     "members": 497,
+     "with_prices": 383,
+     "eligible": 148
+    },
+    {
+     "year": 2013,
+     "members": 497,
+     "with_prices": 388,
+     "eligible": 156
+    },
+    {
+     "year": 2014,
+     "members": 498,
+     "with_prices": 391,
+     "eligible": 159
+    },
+    {
+     "year": 2015,
+     "members": 501,
+     "with_prices": 400,
+     "eligible": 180
+    },
+    {
+     "year": 2016,
+     "members": 505,
+     "with_prices": 415,
+     "eligible": 180
+    },
+    {
+     "year": 2017,
+     "members": 506,
+     "with_prices": 425,
+     "eligible": 156
+    },
+    {
+     "year": 2018,
+     "members": 505,
+     "with_prices": 429,
+     "eligible": 166
+    },
+    {
+     "year": 2019,
+     "members": 505,
+     "with_prices": 434,
+     "eligible": 158
+    },
+    {
+     "year": 2020,
+     "members": 505,
+     "with_prices": 449,
+     "eligible": 209
+    },
+    {
+     "year": 2021,
+     "members": 505,
+     "with_prices": 458,
+     "eligible": 172
+    },
+    {
+     "year": 2022,
+     "members": 504,
+     "with_prices": 469,
+     "eligible": 151
+    },
+    {
+     "year": 2023,
+     "members": 503,
+     "with_prices": 479,
+     "eligible": 160
+    },
+    {
+     "year": 2024,
+     "members": 503,
+     "with_prices": 487,
+     "eligible": 126
+    },
+    {
+     "year": 2025,
+     "members": 503,
+     "with_prices": 493,
+     "eligible": 141
+    },
+    {
+     "year": 2026,
+     "members": 503,
+     "with_prices": 501,
+     "eligible": 131
+    }
+   ]
+  },
+  "lookahead_fundamentals": {
+   "strategy": {
+    "cagr": 0.14013490266812068,
+    "vol": 0.2627584356692723,
+    "sharpe": 0.5751216475537911,
+    "sortino": 0.7309729957879882,
+    "max_dd": -0.6276379061110685,
+    "max_dd_date": "2009-03-09",
+    "total": 12.081868803712508,
+    "years": 19.60574948665298
+   },
+   "spy": {
+    "cagr": 0.10886368646407574,
+    "vol": 0.1960360985699548,
+    "sharpe": 0.5500804300414626,
+    "sortino": 0.6748305316756619,
+    "max_dd": -0.5518945929026734,
+    "max_dd_date": "2009-03-09",
+    "total": 6.583505164340412,
+    "years": 19.60574948665298
+   },
+   "by_year": [
+    {
+     "year": 2007,
+     "strategy": 0.1827710914177907,
+     "spy": 0.03588253369022265
+    },
+    {
+     "year": 2008,
+     "strategy": -0.4456760577950025,
+     "spy": -0.3679501029375629
+    },
+    {
+     "year": 2009,
+     "strategy": 0.12910561168788504,
+     "spy": 0.2635176259157497
+    },
+    {
+     "year": 2010,
+     "strategy": 0.2036336946596129,
+     "spy": 0.15056115993847174
+    },
+    {
+     "year": 2011,
+     "strategy": -0.058459798926025486,
+     "spy": 0.01895009654561397
+    },
+    {
+     "year": 2012,
+     "strategy": 0.17239105520398845,
+     "spy": 0.15990347368746405
+    },
+    {
+     "year": 2013,
+     "strategy": 0.38678415690926493,
+     "spy": 0.3230778094040061
+    },
+    {
+     "year": 2014,
+     "strategy": 0.11588376079074836,
+     "spy": 0.13463751321087347
+    },
+    {
+     "year": 2015,
+     "strategy": -0.006160646796419811,
+     "spy": 0.012343377778720521
+    },
+    {
+     "year": 2016,
+     "strategy": 0.04072306154040306,
+     "spy": 0.11997856170222287
+    },
+    {
+     "year": 2017,
+     "strategy": 0.255254734194194,
+     "spy": 0.21705406263002458
+    },
+    {
+     "year": 2018,
+     "strategy": 0.011485440691230808,
+     "spy": -0.04568991210404738
+    },
+    {
+     "year": 2019,
+     "strategy": 0.3255843877987865,
+     "spy": 0.31223852302976574
+    },
+    {
+     "year": 2020,
+     "strategy": 0.3311775575906164,
+     "spy": 0.1833162792386187
+    },
+    {
+     "year": 2021,
+     "strategy": 0.2348295720693354,
+     "spy": 0.28728772012764225
+    },
+    {
+     "year": 2022,
+     "strategy": -0.020344443148078484,
+     "spy": -0.18175355707528473
+    },
+    {
+     "year": 2023,
+     "strategy": 0.23664466587658772,
+     "spy": 0.2617577783124516
+    },
+    {
+     "year": 2024,
+     "strategy": 0.37827908897490237,
+     "spy": 0.24886463075613463
+    },
+    {
+     "year": 2025,
+     "strategy": 0.24921560540544552,
+     "spy": 0.17719067981214542
+    },
+    {
+     "year": 2026,
+     "strategy": 0.43996253066707736,
+     "spy": 0.12396120867948479
+    }
+   ],
+   "worst_12m_vs_spy": -0.3062463118887735,
+   "worst_12m_vs_spy_date": "2009-06",
+   "pct_months_beat_spy": 0.5338983050847458,
+   "excess_cagr": 0.03127121620404494,
+   "sub_periods": [
+    {
+     "period": "2007-2012 (GFC + recovery)",
+     "start": "2007-01-31",
+     "end": "2012-12-31",
+     "strategy_cagr": -0.002796390650131375,
+     "spy_cagr": 0.020097171571010986,
+     "strategy_sharpe": 0.11702739989001924,
+     "spy_sharpe": 0.1666434611092067,
+     "strategy_maxdd": -0.6276379061110685,
+     "spy_maxdd": -0.5518945929026734
+    },
+    {
+     "period": "2013-2019",
+     "start": "2013-01-02",
+     "end": "2019-12-31",
+     "strategy_cagr": 0.14763864134100957,
+     "spy_cagr": 0.14191457755831483,
+     "strategy_sharpe": 0.8265292512462692,
+     "spy_sharpe": 1.0443069246030723,
+     "strategy_maxdd": -0.26838515312933153,
+     "spy_maxdd": -0.19348947708592978
+    },
+    {
+     "period": "2020-2022 (covid + rate shock)",
+     "start": "2020-01-02",
+     "end": "2022-12-30",
+     "strategy_cagr": 0.16564750456620136,
+     "spy_cagr": 0.0730406196791955,
+     "strategy_sharpe": 0.6136045254130139,
+     "spy_sharpe": 0.3762468902566046,
+     "strategy_maxdd": -0.3468443282150975,
+     "spy_maxdd": -0.3371728241903854
+    },
+    {
+     "period": "2023-now (original backtest window)",
+     "start": "2023-01-03",
+     "end": "2026-09-09",
+     "strategy_cagr": 0.3618701394737738,
+     "spy_cagr": 0.2222215504042102,
+     "strategy_sharpe": 1.149921642622986,
+     "spy_sharpe": 1.1279471293738175,
+     "strategy_maxdd": -0.30680710959507485,
+     "spy_maxdd": -0.18755226260622682
+    }
+   ],
+   "turnover_per_rebalance": 0.3892486285655423,
+   "delistings_handled": 0,
+   "rebalances": 237,
+   "coverage_by_year": [
+    {
+     "year": 2007,
+     "members": 497,
+     "with_prices": 360,
+     "eligible": 89
+    },
+    {
+     "year": 2008,
+     "members": 497,
+     "with_prices": 368,
+     "eligible": 94
+    },
+    {
+     "year": 2009,
+     "members": 499,
+     "with_prices": 371,
+     "eligible": 84
+    },
+    {
+     "year": 2010,
+     "members": 498,
+     "with_prices": 374,
+     "eligible": 92
+    },
+    {
+     "year": 2011,
+     "members": 497,
+     "with_prices": 378,
+     "eligible": 106
+    },
+    {
+     "year": 2012,
+     "members": 497,
+     "with_prices": 383,
+     "eligible": 95
+    },
+    {
+     "year": 2013,
+     "members": 497,
+     "with_prices": 388,
+     "eligible": 101
+    },
+    {
+     "year": 2014,
+     "members": 498,
+     "with_prices": 391,
+     "eligible": 102
+    },
+    {
+     "year": 2015,
+     "members": 501,
+     "with_prices": 400,
+     "eligible": 112
+    },
+    {
+     "year": 2016,
+     "members": 505,
+     "with_prices": 415,
+     "eligible": 108
+    },
+    {
+     "year": 2017,
+     "members": 506,
+     "with_prices": 425,
+     "eligible": 96
+    },
+    {
+     "year": 2018,
+     "members": 505,
+     "with_prices": 429,
+     "eligible": 110
+    },
+    {
+     "year": 2019,
+     "members": 505,
+     "with_prices": 434,
+     "eligible": 107
+    },
+    {
+     "year": 2020,
+     "members": 505,
+     "with_prices": 449,
+     "eligible": 130
+    },
+    {
+     "year": 2021,
+     "members": 505,
+     "with_prices": 458,
+     "eligible": 111
+    },
+    {
+     "year": 2022,
+     "members": 504,
+     "with_prices": 469,
+     "eligible": 96
+    },
+    {
+     "year": 2023,
+     "members": 503,
+     "with_prices": 479,
+     "eligible": 102
+    },
+    {
+     "year": 2024,
+     "members": 503,
+     "with_prices": 487,
+     "eligible": 77
+    },
+    {
+     "year": 2025,
+     "members": 503,
+     "with_prices": 493,
+     "eligible": 92
+    },
+    {
+     "year": 2026,
+     "members": 503,
+     "with_prices": 501,
+     "eligible": 85
+    }
+   ]
+  }
+ },
+ "signal": {
+  "asof": "2026-08-31",
+  "eligible": 56,
+  "target": [
+   "CAT",
+   "GOOGL",
+   "TPR",
+   "APH",
+   "FSLR",
+   "HPE",
+   "FTNT",
+   "CSCO",
+   "STT",
+   "HWM",
+   "NTAP",
+   "ADI",
+   "MS",
+   "DAL",
+   "IBKR",
+   "LUV",
+   "TXN",
+   "GS",
+   "JCI",
+   "PCAR"
+  ],
+  "buys": [
+   "HPE",
+   "FTNT",
+   "CSCO",
+   "STT",
+   "HWM",
+   "NTAP",
+   "ADI",
+   "MS",
+   "DAL",
+   "IBKR",
+   "LUV",
+   "TXN",
+   "GS",
+   "JCI",
+   "PCAR"
+  ],
+  "sells": [
+   "KLAC",
+   "AVGO",
+   "TER",
+   "ROST",
+   "GLW",
+   "LITE",
+   "BKR",
+   "AMAT",
+   "LRCX",
+   "GOOG",
+   "FLEX",
+   "GEV",
+   "CIEN",
+   "FDX",
+   "ANET"
+  ],
+  "sector_mix": {
+   "Industrials": 6,
+   "Communication Services": 1,
+   "Consumer Discretionary": 1,
+   "Information Technology": 8,
+   "Financials": 4
+  },
+  "fundamentals_used": true
+ }
+}

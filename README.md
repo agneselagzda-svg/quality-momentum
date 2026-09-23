@@ -36,6 +36,24 @@ hysteresis  keep a holding while it is still in the top 30
 cost        10 bps on traded notional
 ```
 
+## Results
+
+`notebooks/results.ipynb` plots what `run.py` produced — it reads `results/` and needs no network
+and no price cache, so it runs from a clean clone.
+
+| run | CAGR | excess vs SPY | Sharpe | max drawdown |
+|---|---|---|---|---|
+| honest | 11.5% | **+0.64 pp** | 0.49 | −66.7% |
+| look-ahead fundamentals (wrong) | 14.0% | **+3.13 pp** | 0.58 | −62.8% |
+| S&P 500 (SPY) | 10.9% | — | 0.55 | −55.2% |
+
+Screening on fundamentals that were only knowable later is worth **2.5 points of CAGR a year** —
+about four fifths of the apparent edge. The honest run has a worse Sharpe than simply holding the
+index, and a deeper drawdown.
+
+The window matters as much as the strategy. Across 2007–2012 the same rules lose to the index by
+6.5 points a year; over the 2023-onward window the first backtest used, they win by 19.
+
 ## Current status
 
 - Backtested from 2007; forward-tested with real money April–August 2026.
@@ -62,7 +80,8 @@ qm_data.py       data layer - point-in-time membership, incremental price cache,
 qm_strategy.py   screen, momentum signal, backtest, live signal, metrics
 qm_rebalance.py  signal + holdings -> trade list
 run.py           end-to-end entry point
-notebooks/       exploratory work
+notebooks/       results.ipynb - plots the numbers in results/
+results/         backtest output run.py writes (metrics, equity curves, current signal)
 data/            bundled S&P 500 membership history (public)
 ```
 

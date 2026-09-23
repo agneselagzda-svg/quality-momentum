@@ -1,0 +1,72 @@
+rank,ticker,status,mom_12_1_pct,beta_252d,avg_vol_M,roe_pct,mcap_B,sector,name
+1,HPE,BUY,111.1,1.96,23.0,10.9,78.2,Information Technology,Hewlett Packard Enterprise Comp
+2,FTNT,BUY,104.3,1.0,5.7,117.4,115.4,Information Technology,"Fortinet, Inc."
+3,CAT,HOLD,89.0,1.75,3.2,57.0,374.9,Industrials,"Caterpillar, Inc."
+4,CSCO,BUY,70.5,1.02,22.8,27.3,431.4,Information Technology,"Cisco Systems, Inc."
+5,GOOGL,HOLD,68.8,1.37,31.7,48.7,4043.8,Communication Services,Alphabet Inc.
+6,STT,BUY,63.9,1.06,2.1,12.4,52.7,Financials,State Street Corporation
+7,HWM,BUY,60.5,1.1,2.7,34.7,92.8,Industrials,Howmet Aerospace Inc.
+8,NTAP,BUY,54.9,1.29,2.7,114.8,36.3,Information Technology,"NetApp, Inc."
+9,TPR,HOLD,50.4,1.16,2.9,197.1,22.7,Consumer Discretionary,"Tapestry, Inc."
+10,ADI,BUY,46.4,1.65,4.5,12.2,176.9,Information Technology,"Analog Devices, Inc."
+11,APH,HOLD,44.5,1.75,14.9,38.1,200.6,Information Technology,Amphenol Corporation
+12,MS,BUY,43.3,1.38,5.5,18.0,338.2,Financials,Morgan Stanley
+13,DAL,BUY,42.6,1.63,6.5,20.1,51.8,Industrials,"Delta Air Lines, Inc."
+14,IBKR,BUY,40.8,1.92,4.6,24.0,153.8,Financials,"Interactive Brokers Group, Inc."
+15,LUV,BUY,38.9,1.52,5.6,11.1,18.9,Industrials,Southwest Airlines Company
+16,TXN,BUY,38.6,1.42,8.2,35.2,238.9,Information Technology,Texas Instruments Incorporated
+17,GS,BUY,38.3,1.57,2.1,16.9,299.6,Financials,"Goldman Sachs Group, Inc. (The)"
+18,JCI,BUY,35.8,1.06,4.0,14.3,87.8,Industrials,Johnson Controls International 
+19,PCAR,BUY,34.7,0.96,3.3,12.8,64.2,Industrials,PACCAR Inc.
+20,GE,,31.1,1.24,4.2,48.2,337.6,Industrials,GE Aerospace
+21,NEM,,29.8,1.55,8.3,25.9,135.6,Materials,Newmont Corporation
+22,ETN,,17.9,1.76,2.3,19.7,161.2,Industrials,"Eaton Corporation, PLC"
+23,AMZN,,17.3,1.43,49.0,30.6,2722.5,Consumer Discretionary,"Amazon.com, Inc."
+24,ABNB,,16.1,1.05,4.3,34.5,101.6,Consumer Discretionary,"Airbnb, Inc."
+25,EMR,,12.7,1.56,2.7,12.8,84.2,Industrials,Emerson Electric Company
+26,MGM,,12.6,0.81,2.9,18.9,10.2,Consumer Discretionary,MGM Resorts International
+27,A,,11.6,0.86,2.2,21.0,40.8,Health Care,"Agilent Technologies, Inc."
+28,NVDA,,11.6,1.93,138.8,117.2,5401.0,Information Technology,NVIDIA Corporation
+29,FSLR,HOLD,7.1,1.74,2.2,18.5,21.8,Information Technology,"First Solar, Inc."
+30,AXP,,3.9,0.95,2.9,34.4,217.3,Financials,American Express Company
+31,SYF,,0.2,1.23,3.6,20.8,25.2,Financials,Synchrony Financial
+32,TEL,,-0.4,1.57,2.4,23.3,59.3,Information Technology,TE Connectivity plc
+33,MAS,,-1.4,1.13,2.4,5862.5,13.7,Industrials,Masco Corporation
+34,NXPI,,-2.4,1.78,4.1,27.9,56.3,Information Technology,NXP Semiconductors N.V.
+35,CDNS,,-4.0,1.63,2.4,23.2,78.5,Information Technology,"Cadence Design Systems, Inc."
+36,SHW,,-6.3,0.82,2.2,65.1,77.8,Materials,Sherwin-Williams Company (The)
+37,APO,,-6.8,1.17,4.1,11.4,77.3,Financials,"Apollo Global Management, Inc. "
+38,IBM,,-7.3,0.88,9.5,34.5,226.1,Information Technology,International Business Machines
+39,GEN,,-7.7,0.82,5.7,41.9,17.8,Information Technology,Gen Digital Inc.
+40,MSFT,,-8.2,0.94,37.7,34.0,3650.8,Information Technology,Microsoft Corporation
+41,BA,,-8.5,1.17,5.8,173.5,163.0,Industrials,Boeing Company (The)
+42,NRG,,-8.9,1.41,2.8,23.8,24.3,Utilities,"NRG Energy, Inc."
+43,RCL,,-11.5,1.63,2.2,44.7,69.5,Consumer Discretionary,Royal Caribbean Cruises Ltd.
+44,DHI,,-14.5,0.85,2.3,12.6,38.9,Consumer Discretionary,"D.R. Horton, Inc."
+45,CRH,,-15.5,1.28,4.4,15.8,59.4,Materials,CRH PLC
+46,CEG,,-17.4,1.38,3.2,15.1,104.1,Utilities,Constellation Energy Corporatio
+47,PYPL,,-17.6,1.06,16.0,24.5,45.0,Financials,"PayPal Holdings, Inc."
+48,DECK,,-18.0,0.99,2.3,42.6,10.9,Consumer Discretionary,Deckers Outdoor Corporation
+49,PLTR,,-22.2,1.93,41.3,38.1,407.4,Information Technology,Palantir Technologies Inc.
+50,BX,,-23.5,1.32,4.8,31.4,154.3,Financials,Blackstone Inc.
+51,VST,,-24.3,1.52,4.4,43.0,50.7,Utilities,Vistra Corp.
+52,ISRG,,-25.4,0.92,3.0,17.4,126.6,Health Care,"Intuitive Surgical, Inc."
+53,META,,-25.6,1.4,18.2,29.8,1665.3,Communication Services,"Meta Platforms, Inc."
+54,ARES,,-26.3,1.67,2.3,14.9,44.3,Financials,Ares Management Corporation
+55,UBER,,-26.7,0.92,19.5,37.2,145.2,Industrials,"Uber Technologies, Inc."
+56,LULU,,-42.0,1.23,3.6,30.9,11.0,Consumer Discretionary,lululemon athletica inc.
+,KLAC,SELL,,,,,,Information Technology,(failed screen or left index)
+,AVGO,SELL,,,,,,Information Technology,(failed screen or left index)
+,TER,SELL,,,,,,Information Technology,(failed screen or left index)
+,ROST,SELL,,,,,,Consumer Discretionary,(failed screen or left index)
+,GLW,SELL,,,,,,Information Technology,(failed screen or left index)
+,LITE,SELL,,,,,,Information Technology,(failed screen or left index)
+,BKR,SELL,,,,,,Energy,(failed screen or left index)
+,AMAT,SELL,,,,,,Information Technology,(failed screen or left index)
+,LRCX,SELL,,,,,,Information Technology,(failed screen or left index)
+,GOOG,SELL,,,,,,Communication Services,(failed screen or left index)
+,FLEX,SELL,,,,,,Information Technology,(failed screen or left index)
+,GEV,SELL,,,,,,Industrials,(failed screen or left index)
+,CIEN,SELL,,,,,,Information Technology,(failed screen or left index)
+,FDX,SELL,,,,,,Industrials,(failed screen or left index)
+,ANET,SELL,,,,,,Information Technology,(failed screen or left index)

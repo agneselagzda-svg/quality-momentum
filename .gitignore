@@ -9,3 +9,4 @@ data/riskfree_*.csv
 output/
 exports/
 *.xlsx
+_to_delete/
