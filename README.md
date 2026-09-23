@@ -1,16 +1,24 @@
 # Quality Momentum
 
-A systematic equity strategy, built and run independently outside work hours on free data.
+An active investing / swing trading strategy built independently outside work hours on free data.
 
-The strategy does **not** currently beat the S&P 500. This repository is here because the
-interesting part is not the return — it is what had to be fixed before the backtest was
-worth believing at all.
+The strategy does **not** currently beat the S&P 500. My usual approach to side projects that don't work out is to wipe them and go back to the drawing board. This repository is here because it's a record of what I tried to do, and it is part of a showcase of codes that I have used. This might change in future, but GitHub is not my usual way how to iterate on scripts and code. 
 
 ---
 
+## Current status
+
+Unfinished and iterative. It gets worked on in late evenings and in the lower-stress stretches at
+work, usually when I'm asked to write academic papers.
+
+The live mini-test ran with real money (1000$) from April to August 2026 and is paused. It might restart when
+I get the time and bandwidth to iterate on the idea, implentation, figuring out some clever way to iterate despite the MANY MANY issues and limitations on the freely available data. Realistically this project moves again the next time I am asked to write an academic paper.
+
+- Does not beat the S&P 500 as it stands: larger drawdowns, occasionally larger upside.
+
 ## What "honest" means here
 
-The first version of this backtest looked good. It was wrong in five ways, and each one
+The first version of this backtest looked good. It was wrong in many ways, most of which I clocked from the get go...  and each one
 flattered the result:
 
 | Problem | What the first version did | What this version does |
@@ -54,12 +62,6 @@ index, and a deeper drawdown.
 The window matters as much as the strategy. Across 2007–2012 the same rules lose to the index by
 6.5 points a year; over the 2023-onward window the first backtest used, they win by 19.
 
-## Current status
-
-- Backtested from 2007; forward-tested with real money April–August 2026.
-- Does not beat the S&P 500 as it stands: larger drawdowns, occasionally larger upside.
-- Residual survivorship bias remains from tickers the free data source no longer serves.
-  The coverage report quantifies how much.
 
 ## Things tried and dropped
 
